@@ -7,7 +7,7 @@ const Navbar = ({ children }) => {
     <>
       <nav className="navbar navbar-dark bg-primary navbar-expand-lg">
         <div className="container-fluid">
-          <Link className="navbar-brand" to="/">
+          <Link className="navbar-brand" to="/questionary">
             ESCOMplicado
           </Link>
           <button
@@ -36,13 +36,13 @@ const Navbar = ({ children }) => {
                 </a>
                 <ul className="dropdown-menu">
                   <li>
-                    <Link className="dropdown-item" to="/student">
+                    <Link className="dropdown-item" to="/questionary/student">
                       Alumnos
                     </Link>
                   </li>
 
                   <li>
-                    <Link className="dropdown-item" to="/teacher">
+                    <Link className="dropdown-item" to="/questionary/teacher">
                       Profesores
                     </Link>
                   </li>
@@ -51,7 +51,7 @@ const Navbar = ({ children }) => {
                     <hr className="dropdown-divider" />
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/graduated">
+                    <Link className="dropdown-item" to="/questionary/graduated">
                       Egresados
                     </Link>
                   </li>
